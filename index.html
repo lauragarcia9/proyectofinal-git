@@ -1,0 +1,808 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proyecto final app10</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app10.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head>
+
+<body onLoad=
+"MM_preloadImages('imagenes/mundo.png','imagenes/plan.jpg','imagenes/empresa2.jpeg','imagenes/veterinaria5.jpg','imagenes/odontologia4.jpg','imagenes/empresa3.jpg','imagenes/empresa5.jpg')">
+<div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1 align="center">CARRERAS UNIVERSITARIAS</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+</div>
+   <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Medicina Veterinaria</h2>
+      <p>Muestra informacion de la carrera</p>
+     </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Odontologia</h2>
+      <p>Muestra informacion de la carrera</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Administracion de empresas</h2>
+      <p>Muestra informacion de la carrera</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Datos del desarrollador</h2>
+      <p>Muestra informacion del desarrollador de esta aplicacion</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Universidades</h2>
+      <p>Muestra las univercidades mencionadas</p>
+     </a>
+    </li>
+    </ul>
+   </div>
+   <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/veterinaria3.jpg" alt="veterinaria3" title="veterinaria3" id="wows1_0"/></li>
+		<li><img src="data1/images/veterinaria2.jpg" alt="veterinaria2" title="veterinaria2" id="wows1_1"/></li>
+		<li><img src="data1/images/veterinaria6.jpg" alt="veterinaria6" title="veterinaria6" id="wows1_2"/></li>
+		<li><img src="data1/images/odontologia4.jpg" alt="odontologia4" title="odontologia4" id="wows1_3"/></li>
+		<li><img src="data1/images/odontologia1.png" alt="odontologia1" title="odontologia1" id="wows1_4"/></li>
+		<li><img src="data1/images/odontologia3.jpg" alt="odontologia3" title="odontologia3" id="wows1_5"/></li>
+		<li><img src="data1/images/empresa3.jpg" alt="empresa3" title="empresa3" id="wows1_6"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/actividadesytareas.jpg" alt="wowslider" title="actividadesytareas" id="wows1_7"/></a></li>
+		<li><img src="data1/images/empresa4.jpg" alt="empresa4" title="empresa4" id="wows1_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="veterinaria3"><span><img src="data1/tooltips/veterinaria3.jpg" alt="veterinaria3"/>1</span></a>
+		<a href="#" title="veterinaria2"><span><img src="data1/tooltips/veterinaria2.jpg" alt="veterinaria2"/>2</span></a>
+		<a href="#" title="veterinaria6"><span><img src="data1/tooltips/veterinaria6.jpg" alt="veterinaria6"/>3</span></a>
+		<a href="#" title="odontologia4"><span><img src="data1/tooltips/odontologia4.jpg" alt="odontologia4"/>4</span></a>
+		<a href="#" title="odontologia1"><span><img src="data1/tooltips/odontologia1.png" alt="odontologia1"/>5</span></a>
+		<a href="#" title="odontologia3"><span><img src="data1/tooltips/odontologia3.jpg" alt="odontologia3"/>6</span></a>
+		<a href="#" title="empresa3"><span><img src="data1/tooltips/empresa3.jpg" alt="empresa3"/>7</span></a>
+		<a href="#" title="actividadesytareas"><span><img src="data1/tooltips/actividadesytareas.jpg" alt="actividadesytareas"/>8</span></a>
+		<a href="#" title="empresa4"><span><img src="data1/tooltips/empresa4.jpg" alt="empresa4"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">bootstrap slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <div>
+      <p><img src="res/android/mdpi.png" width="46" height="46"></p>
+    </div>
+    <div>
+     <h4>Guia de carreras</h4>
+     <h4>Laura Garcia Maldonado 4&quot;G&quot;</h4>
+    </div>
+   </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Medicina veterinaria </h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/veterinaria5.jpg',1)"><img src="imagenes/veterinaria2.jpg" width="309" height="175" id="Image23"></a></p>
+      <p><strong><em>Objetivos de la carrera</em></strong></p>
+      <p><em>Abordar la Ciencia y el arte de prevenir y curar las enfermedades de los animales.</em><strong><em><br>
+        <br>
+        Perfil del Profesional</em></strong></p>
+      <p><em>Profesionales con conocimientos científicos y técnicos abocados al mejoramiento de la salud animal, el desarrollo y producción ganadera y la prevención y control de aquellas enfermedades de los animales transmisibles al hombre, aportando a la *Salud Pública.</em></p>
+      <p><em>Además posee conocimientos de tecnología agroalimentaria y de cómo obtener en condiciones óptimas y  económicamente rentables productos de origen animal.</em></p>
+      <p><em>Resuelve problemas prácticos del área, realizando análisis del problema, evaluación de soluciones alternativas, evaluación de sus costos y la toma de decisiones.</em></p>
+      <p><em>La profesión tiene una participación activa en el tema de los recursos naturales, en la conservación y preservación de especies de vida silvestre y factores ecológicos.</em></p>
+      <p><em>Realiza investigación biológica relacionada con áreas específicas de las ciencias veterinarias e incorpora y aplica a la disciplina las últimas innovaciones científicas y tecnológicas.</em></p>
+      <p><strong><em>Duración aproximada de los años de estudio</em></strong><strong></strong></p>
+      <p><em>La carrera dura 10 semestres.</em><strong><em><br>
+        </em></strong><strong><em><br>
+          Especialidades</em></strong></p>
+      <p><em>Medicina Veterinaria, *Producción Animal, Ciencias Veterinarias (microbiología), Protección del Ambiente y fauna silvestre, Administración de Empresas Agropecuarias.</em>      </p>
+      <div data-role="main" class="ui-content"></div>
+      <div>
+        <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+          <li class="ui-first-child ui-last-child"> <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Plan de estudios</h2>
+            <p>Muestra las asignaturas principales de la carrera </p>
+          </a> </li>
+        </ul>
+      </div>
+      <p>&nbsp;</p>
+      <p align="center">Para saber todo  sobre esta carrera da clic:</p>
+      <div data-role="maim" class="ui-content" align="center">
+        <div style="width:10;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+            <li class="ui-first-child ui-last-child"> <a href="http://www.mi-carrera.com/Veterinaria.html" target="_self" data-role="button">
+              <h3>Aqui            </h3>
+            </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <p>      
+      <h2>Universidades que la imparten:</h2>
+      </p>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1 align="center">Universidad de Guanajuato</h1>
+          <p align="center"><a href="http://www.universia.net.mx/estudios/udeg/licenciatura-medicina-veterinaria-zootecnia/st/140838" target="_self"><img src="imagenes/ugto.png" width="304" height="131"></a></p>
+          <p align="center"><a href="http://www.universia.net.mx/estudios/udeg/licenciatura-medicina-veterinaria-zootecnia/st/140838" target="_self">Licenciatura en Medicina Veterinaria y Zootecnia</a></p>
+          <p align="center">La Licenciatura en Medicina Veterinaria y Zootecnia de la Universidad de Guanajuato busca formar profesionales con sentido ecológico, humanista, capaces de aplicar técnicas, tecnologías y metodologías que le permitan innovar los procesos sanitarios y clínicos de los animales, los productos y subproductos de la producción agropecuaria con el fin de mejorar el bienestar de los animales.</p>
+          <div>
+            <div align="center"></div>
+          </div>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1 align="center">Universidad Popular Autónoma del Estado de Puebla</h1>
+          <p align="center"><a href="http://www.universia.net.mx/estudios/upaep/licenciatura-medicina-veterinaria-zootecnia/st/140216" target="_self"><img src="imagenes/upaep.jpg" width="329" height="139"></a></p>
+          <p align="center"><a href="http://www.universia.net.mx/estudios/upaep/licenciatura-medicina-veterinaria-zootecnia/st/140216" target="_self">Licenciatura en Medicina Veterinaria y Zootecnia</a></p>
+          <p align="center">El egresado de la Licenciatura en Medicina Veterinaria y Zootecnia de la Universidad Popular Autónoma del Estado de Puebla cuida de la salud y bienestar de los animales promoviendo de esta manera la salud de los humanos, a través de sus dos ramas: la medicina y la zootecnia, atendiendo todas las especies de animales domésticos, inclusive los no convencionales como animales de zoológico.          </p>
+<div>
+            <div align="center"></div>
+          </div>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1 align="center">Universidad Nacional Autónoma de México</h1>
+          <p align="center"><a href="http://www.universia.net.mx/estudios/unam/licenciatura-medicina-veterinaria-zootecnia-campus-cuautitlan/st/190304" target="_self"><img src="imagenes/unam.png" width="282" height="139"></a></p>
+          <p align="center"><a href="http://www.universia.net.mx/estudios/unam/licenciatura-medicina-veterinaria-zootecnia-campus-cuautitlan/st/190304" target="_self">Licenciatura en Medicina Veterinaria y Zootecnia - Campus Cuautitlán</a></p>
+          <p align="center">El egresado de la FES Cuautitlán, posee habilidad para: * Conducirse con ética profesional y su objetivo principal será el bienestar del hombre y de los animales a través del uso adecuado de éstos.* Promover la salud animal mediante el conocimiento y control de las plagas y enfermedades de los animales.* Participar en los programas de salud pública veterinaria, prevención de las zoonosis, de la higiene y protección de los alimentos.</p>
+          <div>          </div>
+        </div>
+      </div>
+      <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+        <div>
+          <p><img src="res/android/mdpi.png" alt="" width="46" height="46"></p>
+        </div>
+        <div>
+          <h4>Guia de carreras</h4>
+          <h4>Laura Garcia Maldonado 4&quot;G&quot;</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Odontologia</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/odontologia4.jpg',1)"><img src="imagenes/odontologia3.jpg" width="264" height="173" id="Image24"></a></p>
+      <p><strong><em>Objetivos de la carrera</em></strong></p>
+      <p><em>Prestar un servicio eficiente, oportuno y humano al mejoramiento de la salud bucal de la población.</em>      </p>
+      <p><strong><em>Perfil del Profesional</em></strong></p>
+      <p><em>Profesional especializado en salud bucal  y su relación con la salud integral del individuo.</em></p>
+      <p><em>Trata tanto la prevención como las patologías  en  la rehabilitación del paciente.</em></p>
+      <p><em>En el aspecto comunitario presta servicios de educación para la salud dentobucalfacial.</em></p>
+      <p><strong><em>Duración aproximada de los años de estudio</em></strong><strong></strong></p>
+      <p><em>Alrededor de 5 años</em><strong><em><br>
+        </em></strong></p>
+      <p><strong><em>Especialidades</em></strong></p>
+      <p><em>*Ortodoncia, *Endodoncia, *Cirujano Máximo Facial, *Odontopediatría,*Periodoncia, entre otras.</em></p>
+      <div data-role="main" class="ui-content"></div>
+      <div>
+        <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+          <li class="ui-first-child ui-last-child"> <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Plan de estudios</h2>
+            <p>Muestra las asignaturas principales de la carrera </p>
+          </a></li>
+        </ul>
+      </div>
+      <p>&nbsp;</p>
+      <p align="center">Para saber todo  sobre esta carrera da clic:</p>
+      <div data-role="maim" class="ui-content" align="center">
+        <div style="width:10;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+            <li class="ui-first-child ui-last-child"> <a href="http://www.mi-carrera.com/Odontologia.html" target="_self" data-role="button">
+              <h3>Aqui            </h3>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <p>
+      <h2>Universidades que la imparten:</h2>
+      </p>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1 align="center">UPAEP</h1>
+          <p align="center"><a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=166&Itemid=167" target="_self"><img src="imagenes/upaep.jpg" alt="" width="329" height="139"></a></p>
+          <p align="center"><a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=166&Itemid=167" target="_self">Licenciatura en Odontologia</a></p>
+          <p align="center">Como Licenciado en Odontología promoverás la salud; podrás prevenir, diagnosticar y curar las enfermedades bucales, mejorando la calidad de vida de los pacientes. Siendo consciente de las condiciones de salud pública en nuestro país, a través de nues­tro programa académico acreditado y muchas horas de práctica clínica en nuestras mo­dernas instalaciones, desarrollarás tus habilidades con un marcado humanismo y ética profesional.          <br>
+          </p>
+          <div>          </div>
+          <div>
+            <div align="center"></div>
+          </div>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1 align="center">Universidad Nacional Autónoma de Mexico</h1>
+          <p align="center">&nbsp;</p>
+          <p align="center"><a href="http://enes.unam.mx/?lang=es_MX&pl=licenciatura-en-odontologia" target="_self"><img src="imagenes/unam.png" alt="" width="282" height="139"></a></p>
+          <p align="center"><a href="http://enes.unam.mx/?lang=es_MX&pl=licenciatura-en-odontologia" target="_self">Licenciatura en Odontologia</a></p>
+          <p>El objetivo general del plan de estudios es formar profesionales de la odontología con una base sólida, actualizada e innovadora de los fundamentos teórico-metodológicos de esta disciplina, que desarrollen habilidades intelectuales (análisis, reflexión y pensamiento crítico) para la toma de decisiones, y destrezas psicomotoras para la ejecución óptima de procedimientos orientados a mantener la salud bucodental, realizando acciones de prevención, diagnóstico y tratamiento de las afecciones bucodentales que más aquejan a la población mexicana. Asimismo, que durante su formación desarrollen actitudes y valores que les permitan brindar una atención de calidad ética y humanística.          </p>
+<div>
+            <div align="center"><br>
+            </div>
+          </div>
+          <div>
+            <div align="center"></div>
+          </div>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1 align="center">UNITEC</h1>
+          <p align="center"><a href="http://www.unitec.mx/licenciatura-en-cirujano-dentista/" target="_self"><img src="imagenes/unitec.jpg" width="285" height="99"></a></p>
+          <p align="center"><a href="http://www.unitec.mx/licenciatura-en-cirujano-dentista/" target="_self">Licenciatura en Cirujano Dentista</a></p>
+          <p>La Facultad de Odontología de la Universidad Tecnológica de México cuenta con más de 45 años de experiencia formando profesionales de éxito. Estudia la <strong>Licenciatura en Cirujano Dentista</strong> y ábrete a un mundo de posibilidades para crecer y alcanzar tus metas. Conoce nuestro plan de estudios.</p>
+          <div>
+</div>
+        </div>
+      </div>
+      <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+        <div>
+          <p><img src="res/android/mdpi.png" alt="" width="46" height="46"></p>
+        </div>
+        <div>
+          <h4>Guia de carreras</h4>
+          <h4>Laura Garcia Maldonado 4&quot;G&quot;</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Administracion de empresas  </h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/empresa3.jpg',1)"><img src="imagenes/empresa4.jpg" width="360" height="190" id="Image25"></a></p>
+      <p><strong><em><span lang="ES">Objetivos de la Carrera</span></em></strong> </p>
+      <p><em><span lang="ES">Responder<em> a las necesidades reales del mundo empresarial actual, investigando y prediciendo hacia dónde se debe avanzar y con qué herramientas competir en el mercado.</em></span></em>      </p>
+      <p><strong><em><span lang="ES">Perfil del Profesional</span></em></strong><strong><span lang="ES"> </span></strong></p>
+      <p><em><span lang="ES">Es un coordinador y director de los esfuerzos encaminados a alcanzar el objetivo de la empresa. En su desempeño tendrá que asumir riesgos calculados, hacer frente a imprevistos que surjan y tener a mano soluciones adecuadas para superar los obstáculos que se puedan presentar.</span></em><em><span lang="ES"> </span></em></p>
+      <p><em><span lang="ES">También debe lograr un óptimo aprovechamiento de sus recursos para mejorar la calidad, competitividad y eficiencia de la empresa.</span></em><em><span lang="ES"> </span></em></p>
+      <p><em><span lang="ES">Conduce la empresa en base a disponibilidad de información tanto interna como externa a la empresa, la cual analiza y en base a ella determinar una línea de acción y prevé futuras situaciones, con la finalidad de desarrollarla y promoverla en el mercado<strong>.</strong></span></em><strong><em><span lang="ES"> </span></em></strong></p>
+      <p><em><span lang="ES">La información externa a la empresa que requiere es<strong> </strong>de tipo económico, social, legal, político y tecnológico, para hacer un diagnóstico e interpretación de la situación de la empresa  en el  medio ambiente donde se desenvuelve. Y también factores más específicos de su  interés como es información de sus proveedores, clientes, grupos de presión y competencia.</span></em>      </p>
+      <p><em><span lang="ES">La información interna de la empresa la obtiene vía documentos que informan de datos generales y efectivos de las áreas de producción, administración y financiamiento de la empresa, de manera de tomar decisiones basadas en hechos reales y actualizados de la empresa.</span></em><span lang="ES"> </span></p>
+      <p><strong><em>Duración aproximada de los años de estudio</em></strong><strong></strong></p>
+      <p><em><span lang="ES">4 a 5 años según régimen de estudios de la institución que la imparta.</span></em><strong><em><br>
+      </em></strong></p>
+      <div data-role="main" class="ui-content"></div>
+      <div>
+        <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+          <li class="ui-first-child ui-last-child"> <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Plan de estudios</h2>
+            <p>Muestra las asignaturas principales de la carrera </p>
+          </a></li>
+          <li class="ui-first-child ui-last-child"> <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Actividades que se realizan en la profesion</h2>
+            <p>Muestra las actividades y tareas que se realizan en la profesion</p>
+          </a></li>
+        </ul>
+      </div>
+      <p>&nbsp;</p>
+      <p align="center">Para saber todo  sobre esta carrera da clic:</p>
+      <div data-role="maim" class="ui-content" align="center">
+        <div style="width:10;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+            <li class="ui-first-child ui-last-child"> <a href="https://www.nosequeestudiar.net/quieres-estudiar-administracion-de-empresas/" target="_self" data-role="button">
+              <h3>Aqui            </h3>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <p>
+      <h2>Universidades que la imparten:</h2>
+      </p>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1 align="center">UNITEC</h1>
+          <p align="center"><a href="http://www.unitec.mx/licenciatura-en-administracion-de-empresas/" target="_self"><img src="imagenes/unitec.jpg" alt="" width="285" height="99"></a></p>
+          <p align="center"><a href="http://www.unitec.mx/licenciatura-en-administracion-de-empresas/" target="_self">Licenciatura en  Admisnistracion de Empresas</a></p>
+          <p align="center">Si te interesa hacer que las organizaciones alcancen sus objetivos de manera eficiente y eficaz, así como generar nuevos negocios y desarrollar mejoras estratégicas, estudiar la <strong>Licenciatura en Administración de Empresas</strong> de la Universidad Tecnológica de México puede abrirte un mundo de posibilidades para crecer y alcanzar tus metas.</p>
+          <div>
+            <div align="center"></div>
+          </div>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1 align="center">USIL</h1>
+          <p align="center"><a href="http://www.institutoemprendedores.pe/carreras/administracion-de-empresas" target="_self"><img src="imagenes/usil.jpg" width="297" height="124"></a></p>
+          <p align="center"><a href="http://www.institutoemprendedores.pe/carreras/administracion-de-empresas" target="_self">Licenciatura en Administracion de Empresas</a></p>
+          <p align="center">Nuestros profesionales técnicos desarrollan habilidades para la toma de decisiones y el asesoramiento empresarial, así como habilidades de liderazgo, comunicación, trabajo en equipo, negociación, creatividad e innovación. Crean organizaciones diferentes y transforman las existentes en organizaciones competitivas con visión internacional.          </p>
+          <div>
+            <div align="center"></div>
+          </div>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1 align="center">UDLAP</h1>
+          <p align="center"><a href="http://www.udlap.mx/ofertaacademica/conoce.aspx?cveCarrera=LAD" target="_self"><img src="imagenes/udlap.jpg" width="243" height="117"></a></p>
+          <p align="center"><a href="http://www.udlap.mx/ofertaacademica/conoce.aspx?cveCarrera=LAD" target="_self">Licenciatura en Administracion de Empresas</a></p>
+          <p align="center">La misión de la Licenciatura en Administración de Empresas es prepararte para que puedas desarrollarte exitosamente en el mundo laboral. A lo largo de tu estancia en la UDLAP, recibirás los conocimientos y la experiencia necesaria que te permitirán ser un profesional eficiente en todas las tareas que las empresas puedan requerir de ti. Asimismo, nuestro plan de estudios está estructurado para que al concluirlo seas capaz de especializarte, esto mediante distintitos tipos de cursos y maestrías, lo que te proporcionará la capacidad de laborar en empresas nacionales e internacionales. Además, como administrador tendrás la facultad de trabajar en dependencias gubernamentales, consultorías, el sector bancario, entre otras muchas opciones, destacándote como un experto en pequeñas y grandes empresas.</p>
+          <div>
+            <div align="center"></div>
+          </div>
+        </div>
+      </div>
+      <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+        <div>
+          <p><img src="res/android/mdpi.png" alt="" width="46" height="46"></p>
+        </div>
+        <div>
+          <h4>Guia de carreras</h4>
+          <h4>Laura Garcia Maldonado 4&quot;G&quot;</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div data-role="page" id="Pagina4"  data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Desarrollador</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Datos del desarrollador</h2>
+      <table width="316" height="351" border="1">
+        <tr>
+          <td width="90">Nombre</td>
+          <td width="210">Laura Garcia Maldonado </td>
+        </tr>
+        <tr>
+          <td>Grupo</td>
+          <td>&quot;G&quot;</td>
+        </tr>
+        <tr>
+          <td>Semestre</td>
+          <td>Cuarto </td>
+        </tr>
+        <tr>
+          <td>Nombre de docente</td>
+          <td>Jose Antonio Gomez Hernandez </td>
+        </tr>
+        <tr>
+          <td>Submodulo</td>
+          <td>Diseña Aplicaciones Moviles (DAM)</td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <div>
+      <p><img src="res/android/mdpi.png" alt="" width="46" height="46"></p>
+    </div>
+    <div>
+      <h4>Guia de carreras</h4>
+      <h4>Laura Garcia Maldonado 4&quot;G&quot;</h4>
+    </div>
+  </div>
+</div>
+<div data-role="page" id="Pagina5"  data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Plan de estudios</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/plan.jpg',1)"><img src="imagenes/veterinaria4.jpg" width="270" height="261" id="Image13"></a></p>
+      <p><strong><em>Principales asignaturas contempladas en el plan de estudios</em></strong></p>
+      <p><em><u>Asignaturas de formación Básica</u></em></p>
+      <p><em>Química<br>
+        Matemáticas<br>
+        Biología</em></p>
+      <p><em><u>Área profesional</u></em></p>
+      <p><em>Botánica<br>
+        Zoología<br>
+        Ecología<br>
+        Bioquímica<br>
+        *Embriología e *Histología<br>
+        *Anatomía Veterinaria<br>
+        *Biofísica<br>
+        Geografía Económica<br>
+        *Bioestadística<br>
+        *Fisiología Veterinaria<br>
+        *Anatomía Veterinaria Comparada<br>
+        *Inmunología<br>
+        Microbiología<br>
+        *Zootecnia General<br>
+        *Genética Pecuaria<br>
+        *Patología General<br>
+        *Farmacología y *Terapéutica Veterinaria<br>
+        *Virología<br>
+        Anatomía *Patológica<br>
+        Nutrición Animal<br>
+        *Fisiopatología<br>
+        Enfermedades Parasitarias<br>
+        Enfermedades Infecciosas<br>
+        Alimentación Animal<br>
+        Inspección e Higiene de los Alimentos<br>
+        Producción *Aviar<br>
+        Reproducción e *Inseminación Artificial<br>
+        *Semiología<br>
+        *Hematología y Bioquímica Clínica<br>
+        Patología Aviar<br>
+        Producción Equina<br>
+        Producción de *Bovinos de Leche<br>
+        Producción de Bovinos de Carne<br>
+        *Obstetricia y Ginecología<br>
+        Producción *Porcina<br>
+        *Radiología y *Medicina Nuclear<br>
+        Medicina de Animales Mayores<br>
+        Medicina de Animales Menores<br>
+        Cirugía Veterinaria<br>
+        *Epidemiología y *Salud Pública Veterinaria<br>
+        Tecnología de Alimentos y Producción de Origen Animal<br>
+        Producción *Ovina y *Caprina</em></p>
+      <p><em><u>Asignaturas Complementarias</u></em></p>
+      <p><em>*Economía General<br>
+        *Planificación y Evaluación de Proyectos<br>
+        Administración de Empresas Pecuarias</em></p>
+      <p>&nbsp; </p>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <div>
+      <p><img src="res/android/mdpi.png" alt="" width="46" height="46"></p>
+    </div>
+    <div>
+      <h4>Guia de carreras</h4>
+      <h4>Laura Garcia Maldonado 4&quot;G&quot;    </h4>
+    </div>
+  </div>
+</div>
+<div data-role="page" id="Pagina6"  data-add-back-btn="true" data-theme="b">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Plan de estudios</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/plan.jpg',1)"><img src="imagenes/odontologia2.jpg" width="251" height="250" id="Image12"></a></p>
+            <p><strong><em>Principales asignaturas contempladas en el plan de estudios</em></strong></p>
+            <p><em><u>Asignaturas de formación Básica</u></em><em>.</em></p>
+            <p><em>Química</em></p>
+            <p><em>*Anatomía Humana</em></p>
+            <p><em>*Biología Celular y Genética</em></p>
+            <p><em>*Histología General</em></p>
+            <p><em>*Bioquímica General</em></p>
+            <p><em>*Biomecánica</em></p>
+            <p><em><u>Área profesional</u></em></p>
+            <p> </p>
+            <p><em>Histología Oral</em></p>
+            <p><em>*Biomateriales</em></p>
+            <p><em>*Patología General</em></p>
+            <p><em>*Fisiología Humana</em></p>
+            <p><em>*Nutrición</em></p>
+            <p><em>Bioquímica Oral</em></p>
+            <p><em>*Fisiología Oral</em></p>
+            <p><em>*Microbiología Oral</em></p>
+            <p><em>*Salud Pública</em></p>
+            <p><em>*Patología Dentomaxilar</em></p>
+            <p><em>Cirugía Bucal</em></p>
+            <p><em>*Farmacología</em></p>
+            <p><em>*Oclusión</em></p>
+            <p><em>*Periodoncia</em></p>
+            <p><em>Prótesis Removible</em></p>
+            <p><em>Prótesis Fija</em></p>
+            <p><em>*Radiología Dentomaxilar</em></p>
+            <p><em>*Cariología</em></p>
+            <p><em>*Patología Máximo Facial</em></p>
+            <p><em>*Cirugía Dentomaxilar</em></p>
+            <p><em>*Odontopediatria</em></p>
+            <p><em>Operatoria Clínica</em></p>
+            <p><em>*Endodoncia</em></p>
+            <p><em>Cirugía *Máxilo Facial</em></p>
+            <p><em>*Ortodoncia</em></p>
+            <p><em>*Traumatología y Prótesis Máximo Facial</em></p>
+            <p><em>Medicina Oral</em></p>
+            <p><em>Prótesis Totales</em><em><br>
+            </em></p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+        <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+            <p><img src="res/android/mdpi.png" alt="" width="46" height="46"></p>
+          </div>
+          <div>
+            <h4>Guia de carreras</h4>
+            <h4>Laura Garcia Maldonado 4&quot;G&quot;</h4>
+          </div>
+        </div>
+</div>
+<div data-role="page" id="Pagina7"  data-add-back-btn="true" data-theme="b">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Plan de estudios</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/plan.jpg',1)"><img src="imagenes/empresa1.jpg" width="289" height="278" id="Image11"></a></p>
+            <p><strong><em>Principales asignaturas contempladas en el plan de estudios</em></strong></p>
+            <p><em><u><span lang="ES">Asignaturas de formación General</span></u></em><u></u></p>
+            <p><em><span lang="ES">Psicología Social, Derecho Laboral, Teoría de la Sociedad, Historia Económica, Varios Niveles de Inglés</span></em></p>
+            <p><em><u><span lang="ES"> </span></u></em></p>
+            <p><em><u><span lang="ES">Asignaturas de formación Básica</span></u></em><em><span lang="ES">.</span></em></p>
+            <p><em><span lang="ES">Matemáticas (Álgebra, Cálculo 1,2 y 3, Estadística 1 y 2), Computación.</span></em></p>
+            <p><em><u><span lang="ES"> </span></u></em></p>
+            <p><em><u><span lang="ES">Área profesional</span></u></em></p>
+            <p><em><span lang="ES">Administración 1 y 2,  *Contabilidad, *Contabilidad Financiera, *Contabilidad de Costos, *Finanzas, Administración Financiera, *Marketing, *Mercado de Capitales,  Cadena de Suministro, Gestión Comercial,  Personal y Comunicación, *Macroeconomía, Economía Internacional, Administración de la Producción ,  Política de Negocios , Teoría de Precios , Comercialización, *Investigación de Mercado,  Equilibrio de Mercado, Teoría de La Organización de La Empresa, Evaluación de Inversiones,  Investigación Operativa.</span></em></p>
+            <p><em><span lang="ES"> </span></em></p>
+          </div>
+        </div>
+        <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+            <p><img src="res/android/mdpi.png" alt="" width="46" height="46"></p>
+          </div>
+          <div>
+            <h4>Guia de carreras</h4>
+            <h4>Laura Garcia Maldonado 4&quot;G&quot;          </h4>
+          </div>
+        </div>
+</div>
+<div data-role="page" id="Pagina8"  data-add-back-btn="true" data-theme="b">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Actividades y tareas que se realizan en la profesion </h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/empresa2.jpeg',1)"><img src="imagenes/actividadesytareas.jpg" width="295" height="198" id="Image14"></a></p>
+            <p><strong><em><span lang="ES">Tareas o actividades específicas que se realizan en la profesión.</span></em></strong><em><span lang="ES"> </span></em>            </p>
+            <p><em><span lang="ES">-Evalúa  lo que ocurre dentro y fuera de la empresa.</span></em></p>
+            <p><em><span lang="ES">-Proyecta  el devenir de la empresa y su vinculación con el medio.</span></em></p>
+            <p><em><span lang="ES">-Diseña la estrategia de la organización de manera de adaptar la empresa a los cambios del medio.</span></em></p>
+            <p><em><span lang="ES">-Genera proyectos *viables. *Formula y *administra proyectos de *inversión, desde la concepción inicial del proyecto, su diseño y construcción hasta la *gestión de su operación real.</span></em></p>
+            <p><em><span lang="ES">-Planifica la *gestión, estrategias y *políticas al interior de las empresas.</span></em></p>
+            <p><em><span lang="ES">-Lidera, motiva, persuade, negocia, conduce y trabaja en equipo para el logro de los objetivos de la empresa. Debe conocer a las personas que tiene bajo su mando obteniendo lo mejor de ellas y ser capaz de conducirlas a dichos objetivos.</span></em><em><span lang="ES"> </span></em></p>
+            <p><em><span lang="ES">-Interpreta los resultados económicos y administrativos de la empresa y los cuestiona.</span></em></p>
+            <p><em><span lang="ES">-Toma  iniciativas y riesgos empresariales con conocimientos de los instrumentos propios de la actividad.</span></em>            </p>
+            <p><em><span lang="ES">-Estudia la  estructura organizacional de la empresa y sus procesos de decisión, *planificación, información y control.</span></em>            </p>
+            <p><em><span lang="ES">-Hace uso de métodos e instrumentos científicos y tecnológicos para optimizar el *potencial humano, los recursos materiales, tecnológicos, económicos y financieros de las organizaciones.</span></em>            </p>
+            <p><em><span lang="ES">-Incorpora mayor tecnología para incrementar la eficiencia y productividad.</span></em>            </p>
+            <p><em><span lang="ES">-Conoce bien el tipo de producto que ofrece, *mercado al que va dirigido, nivel de ventas y sus posibilidades reales de abastecer a sus *clientes potenciales; al tiempo que tiene controladas las áreas de *producción, *administración, y *financiación.</span></em>            </p>
+            <p><em><span lang="ES">Toda esta labor puede realizarla  como gerente de una empresa, o emprendiendo  su propio negocio.</span></em></p>
+            <p>&nbsp;</p>
+            <h4><span lang="ES">Campo Ocupacional</span> </h4>
+            <p><em><span lang="ES">Empresas públicas</span></em></p>
+            <p><em><span lang="ES">Empresas privadas</span></em></p>
+            <p><em><span lang="ES">Investigador, ejecutivo o asesor de todo tipo de empresas u organizaciones que se vinculen con fenómenos de orden económico.</span></em></p>
+            <p><em><span lang="ES">Investigación y docencia en Instituciones de educación superior, como Universidades, Institutos, etc.</span></em></p>
+            <p><em><span lang="ES">Emprender su propio negocio.</span></em></p>
+            <p>          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','imagenes/empresa5.jpg',1)"><img src="imagenes/campo.jpg" width="339" height="154" id="Image34"></a></p>
+          </div>
+        </div>
+        <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+            <p><img src="res/android/mdpi.png" alt="" width="46" height="46"></p>
+          </div>
+          <div>
+            <h4>Guia de carreras</h4>
+            <h4>Laura Garcia Maldonado 4&quot;G&quot;          </h4>
+          </div>
+        </div>
+</div>
+<div data-role="page" id="Pagina9"  data-add-back-btn="true" data-theme="b">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Universidades</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+          
+          <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/graduacion.jpg" alt="graduacion" title="graduacion" id="wows2_0"/></li>
+		<li><img src="data2/images/udlap.jpg" alt="udlap" title="udlap" id="wows2_1"/></li>
+		<li><img src="data2/images/ugto.png" alt="ugto" title="ugto" id="wows2_2"/></li>
+		<li><img src="data2/images/unam.png" alt="unam" title="unam" id="wows2_3"/></li>
+		<li><img src="data2/images/unitec.jpg" alt="unitec" title="unitec" id="wows2_4"/></li>
+		<li><img src="data2/images/universidades.jpg" alt="universidades" title="universidades" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/upaep.jpg" alt="bootstrap carousel" title="upaep" id="wows2_6"/></a></li>
+		<li><img src="data2/images/usil.jpg" alt="usil" title="usil" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="graduacion"><span><img src="data2/tooltips/graduacion.jpg" alt="graduacion"/>1</span></a>
+		<a href="#" title="udlap"><span><img src="data2/tooltips/udlap.jpg" alt="udlap"/>2</span></a>
+		<a href="#" title="ugto"><span><img src="data2/tooltips/ugto.png" alt="ugto"/>3</span></a>
+		<a href="#" title="unam"><span><img src="data2/tooltips/unam.png" alt="unam"/>4</span></a>
+		<a href="#" title="unitec"><span><img src="data2/tooltips/unitec.jpg" alt="unitec"/>5</span></a>
+		<a href="#" title="universidades"><span><img src="data2/tooltips/universidades.jpg" alt="universidades"/>6</span></a>
+		<a href="#" title="upaep"><span><img src="data2/tooltips/upaep.jpg" alt="upaep"/>7</span></a>
+		<a href="#" title="usil"><span><img src="data2/tooltips/usil.jpg" alt="usil"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<p>En esta aplicacion se encuentran algunas opciones de universidades que son:</p>
+            <p><a href="http://enes.unam.mx/?lang=es_MX&pl=licenciatura-en-odontologia" target="_self"><img src="imagenes/unam.png" alt="" width="282" height="139"></a></p>
+            <p>Para mas informacion de la universidad:</p>
+           <div data-role="maim" class="ui-content" align="center">
+            <div style="width:70%;">
+              <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                <li class="ui-first-child ui-last-child"> <a href="https://www.unam.mx/" target="_self" data-role="button">
+                  <h3>UNAM </h3>
+                </a></li>
+</ul>
+</div>
+            <div style="width:10;"> </div>
+            <div style="width:10;">            </div>
+          </div>
+          <div>
+            <div align="center"><br>
+            </div>
+          </div>
+          <p><a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=166&Itemid=167" target="_self"><img src="imagenes/upaep.jpg" alt="" width="329" height="139"></a></p>
+          <p>Para mas informacion de la universidad:</p>
+           <div data-role="maim" class="ui-content" align="center">
+            <div style="width:70%;">
+              <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                <li class="ui-first-child ui-last-child"> <a href="http://www.upaep.mx/" target="_self" data-role="button">
+                  <h3>UPAEP </h3>
+                </a></li>
+</ul>
+</div>
+            <div style="width:10;"> </div>
+            <div style="width:10;"> </div>
+            <div style="width:10;">            </div>
+          </div>
+          <div>
+            <div align="center"><br>
+            </div>
+          </div>
+          <p>&nbsp;</p>
+            <p><a href="http://www.unitec.mx/licenciatura-en-administracion-de-empresas/" target="_self"><img src="imagenes/unitec.jpg" alt="" width="285" height="99"></a></p>
+            <p>Para mas informacion de la universidad:</p>
+             <div data-role="maim" class="ui-content" align="center">
+            <div style="width:70%;">
+              <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                <li class="ui-first-child ui-last-child"> <a href="http://www.unitec.mx/" target="_self" data-role="button">
+                  <h3>UNITEC                </h3>
+                </a></li>
+</ul>
+</div>
+            <div style="width:10;">            </div>
+          </div>
+          <div>
+            <div align="center"><br>
+            </div>
+          </div>
+            <p>&nbsp;</p>
+            <p><a href="http://www.institutoemprendedores.pe/carreras/administracion-de-empresas" target="_self"><img src="imagenes/usil.jpg" alt="" width="297" height="124"></a></p>
+            <p>Para mas informacion de la universidad:</p>
+            <div data-role="maim" class="ui-content" align="center">
+            <div style="width:70%;">
+              <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                <li class="ui-first-child ui-last-child"> <a href="http://www.usil.edu.pe/" target="_self" data-role="button">
+                  <h3>USIL</h3>
+                </a></li>
+</ul>
+</div>
+            <div style="width:10;"> </div>
+            <div style="width:10;">            </div>
+          </div>
+          <div>
+            <div align="center"><br>
+            </div>
+          </div>
+          <div>
+            <p>&nbsp;</p>
+            <p><a href="http://www.universia.net.mx/estudios/udeg/licenciatura-medicina-veterinaria-zootecnia/st/140838" target="_self"><img src="imagenes/ugto.png" alt="" width="304" height="131"></a></p>
+            <p>Para mas informacion de la universidad:</p>
+            <div data-role="maim" class="ui-content" align="center">
+        <div style="width:70%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+            <li class="ui-first-child ui-last-child"> <a href="http://www.ugto.mx/" target="_self" data-role="button">
+              <h3>UGTO            </h3>
+            </a></li>
+          </ul>
+        </div>
+            </div>
+            <div>
+            <div align="center"><br>
+            </div>
+          </div>
+            <p>&nbsp;</p>
+            <p><a href="http://www.udlap.mx/ofertaacademica/conoce.aspx?cveCarrera=LAD" target="_self"><img src="imagenes/udlap.jpg" alt="" width="243" height="117"></a></p>
+            <p>Para mas informacion de la universidad:</p>
+            <div data-role="maim" class="ui-content" align="center">
+            <div style="width:70%;">
+              <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                <li class="ui-first-child ui-last-child"> <a href="https://www.udlap.mx/inicio.aspx" target="_self" data-role="button">
+                  <h3>UDLAP</h3>
+                </a></li>
+</ul>
+</div>
+            <div style="width:10;"> </div>
+            <div style="width:10;"> </div>
+            <div style="width:10;">            </div>
+          </div>
+          <div>
+            <div align="center"></div>
+          </div>
+        </div>
+          </div>
+        <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+            <p><img src="res/android/mdpi.png" alt="" width="46" height="46"></p>
+          </div>
+          <div>
+            <h4>Guia de carreras</h4>
+            <h4>Laura Garcia Maldonado 4&quot;G&quot;          </h4>
+          </div>
+        </div>
+</div>
+</body>
+</html>
